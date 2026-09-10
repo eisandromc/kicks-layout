@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KICKS — versão Tailwind CSS. Loja demonstrativa de tênis construída com utilitários do Tailwind.">
+    <title>Tailwind - Minha conta | KICKS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white" data-layout="tailwind" data-page="conta">
+
+    <a class="back-to-index" href="../index.html" aria-label="Voltar para a página de versões" title="Voltar para as versões">
+        <span class="back-to-index-icon" aria-hidden="true">&#8592;</span>
+        <span class="back-to-index-label">Versões</span>
+    </a>
+    <div class="bg-[color:var(--brand)] py-2 text-center text-xs tracking-wide text-white">Frete grátis para todo o Brasil em compras acima de R$ 299.</div>
+    <header class="sticky top-0 z-40 border-b border-[color:var(--line)] bg-white/90 backdrop-blur">
+        <div class="mx-auto max-w-[1200px] px-6 flex flex-wrap items-center gap-3 py-3">
+            <a class="flex items-center gap-2 text-xl font-black tracking-tight" href="index.html"><span aria-hidden="true">&#9698;</span>KICKS</a>
+            <button class="ml-auto rounded-lg border border-[color:var(--line)] px-3 py-2 text-sm font-semibold lg:hidden" type="button" data-menu-toggle aria-expanded="false" aria-controls="mainNav">Menu</button>
+            <nav class="main-nav order-last hidden w-full lg:order-none lg:flex lg:w-auto" id="mainNav" data-mobile-nav aria-label="navegação principal">
+                <ul class="flex flex-col gap-3 py-3 text-sm font-semibold lg:flex-row lg:gap-6 lg:py-0">
+                    <li><a class="text-[#3f524f] hover:text-[color:var(--brand)]" href="index.html">Home</a></li>
+                    <li><a class="text-[#3f524f] hover:text-[color:var(--brand)]" href="produtos.html">Produtos</a></li>
+                    <li><a class="text-[#3f524f] hover:text-[color:var(--brand)]" href="favoritos.html">Favoritos</a></li>
+                    <li><a class="text-[#3f524f] hover:text-[color:var(--brand)]" href="carrinho.html">Carrinho</a></li>
+                    <li><a class="text-[color:var(--brand)]" href="conta.html">Conta</a></li>
+                    <li><a class="text-[#3f524f] hover:text-[color:var(--brand)]" href="sobre.html">Sobre</a></li>
+                    <li><a class="text-[#3f524f] hover:text-[color:var(--brand)]" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <form class="relative flex min-w-[180px] flex-1 items-stretch" role="search" data-global-search aria-label="buscar produtos">
+                <label class="visually-hidden" for="global-search">Buscar produtos</label>
+                <input id="global-search" type="search" class="w-full rounded-full border border-[color:var(--line)] bg-[color:var(--soft)] py-2.5 pl-4 pr-24 text-sm outline-none focus:border-[color:var(--brand)] focus:bg-white" placeholder="Buscar tênis, marca ou modelo...">
+                <button class="absolute right-1 top-1/2 -translate-y-1/2 rounded-full bg-[color:var(--brand)] px-4 py-2 text-xs font-bold text-white" type="submit">Buscar</button>
+            </form>
+            <a class="flex items-center gap-2 whitespace-nowrap text-sm font-bold" href="carrinho.html">Carrinho <span class="inline-grid h-[22px] min-w-[22px] place-items-center rounded-full bg-[color:var(--brand)] px-1 text-xs text-white" data-cart-count>0</span></a>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="bg-[color:var(--soft)] py-12 lg:py-16">
+            <div class="mx-auto max-w-[1200px] px-6">
+                <p class="eyebrow mb-2">KICKS STORE</p>
+                <h1 class="text-4xl font-black tracking-tight lg:text-5xl">Minha conta</h1>
+                <p class="mt-2 text-[#55655f]">Salve seus dados localmente para agilizar pedidos futuros.</p>
+            </div>
+        </section>
+
+        <section class="py-12">
+            <div class="mx-auto max-w-[1200px] px-6 max-w-[760px]">
+                <div class="rounded-2xl border border-[color:var(--line)] p-6">
+                    <h2 class="text-lg font-bold">Perfil local</h2>
+                    <p class="text-[#55655f]" data-account-status>Nenhum perfil salvo neste navegador.</p>
+                    <form class="mt-3 grid gap-3" data-account-form>
+                        <div><label class="mb-1 block text-sm font-semibold" for="account-name">Nome</label><input class="w-full rounded-xl border border-[color:var(--line)] px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand)]" id="account-name" name="name" required></div>
+                        <div><label class="mb-1 block text-sm font-semibold" for="account-email">E-mail</label><input class="w-full rounded-xl border border-[color:var(--line)] px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand)]" id="account-email" type="email" name="email" required></div>
+                        <div><label class="mb-1 block text-sm font-semibold" for="account-phone">Telefone</label><input class="w-full rounded-xl border border-[color:var(--line)] px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand)]" id="account-phone" name="phone" required></div>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="btn btn-primary" type="submit">Salvar dados</button>
+                            <button class="btn btn-secondary" type="button" data-account-clear>Limpar dados</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="bg-[color:var(--soft)] py-12" aria-labelledby="newsletter-title">
+        <div class="mx-auto max-w-[1200px] px-6 grid gap-4 lg:grid-cols-2 lg:items-center">
+            <div>
+                <h2 id="newsletter-title" class="text-2xl font-bold">Fique por dentro</h2>
+                <p class="text-[#55655f]">Receba novidades, promoções e lançamentos em primeira mão.</p>
+            </div>
+            <form class="flex gap-2" data-newsletter>
+                <label class="visually-hidden" for="newsletter-email">Seu e-mail</label>
+                <input id="newsletter-email" type="email" required class="flex-1 rounded-full border border-[color:var(--line)] px-5 py-3 text-sm outline-none focus:border-[color:var(--brand)]" placeholder="Seu e-mail">
+                <button class="btn btn-primary" type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-[color:var(--ink)] py-14 text-white/70">
+        <div class="mx-auto max-w-[1200px] px-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
+            <section>
+                <h2 class="mb-3 text-sm font-bold uppercase tracking-wide text-white">KICKS</h2>
+                <p class="text-sm">Tênis para todos os passos da sua jornada. Projeto demonstrativo front-end, com ênfase didática na construção de layout com Tailwind CSS.</p>
+            </section>
+            <nav aria-label="institucional">
+                <h2 class="mb-3 text-sm font-bold uppercase tracking-wide text-white">Institucional</h2>
+                <ul class="space-y-2 text-sm">
+                    <li><a class="hover:text-white" href="sobre.html">Sobre nós</a></li>
+                    <li><a class="hover:text-white" href="contato.html">Contato</a></li>
+                    <li><a class="hover:text-white" href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="ajuda">
+                <h2 class="mb-3 text-sm font-bold uppercase tracking-wide text-white">Ajuda</h2>
+                <ul class="space-y-2 text-sm">
+                    <li><a class="hover:text-white" href="carrinho.html">Meu carrinho</a></li>
+                    <li><a class="hover:text-white" href="favoritos.html">Favoritos</a></li>
+                    <li><a class="hover:text-white" href="checkout.html">Finalizar compra</a></li>
+                    <li><a class="hover:text-white" href="politicas.html">Políticas</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="categorias">
+                <h2 class="mb-3 text-sm font-bold uppercase tracking-wide text-white">Categorias</h2>
+                <ul class="space-y-2 text-sm">
+                    <li><a class="hover:text-white" href="produtos.html?categoria=Running">Running</a></li>
+                    <li><a class="hover:text-white" href="produtos.html?categoria=Casual">Casual</a></li>
+                    <li><a class="hover:text-white" href="produtos.html?categoria=Skate">Skate</a></li>
+                    <li><a class="hover:text-white" href="produtos.html?categoria=Lifestyle">Lifestyle</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mx-auto max-w-[1200px] px-6 mt-10 border-t border-white/15 pt-6 text-xs text-white/50">© 2026 KICKS · Demonstração educacional · Layout Tailwind.</div>
+    </footer>
+
+    <script src="../shared/js/store-config.js"></script>
+    <script src="../shared/data/produtos.js"></script>
+    <script src="../shared/js/app.js"></script>
+</body>
+</html>
