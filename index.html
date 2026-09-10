@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Seletor das cinco implementações da loja KICKS.">
+    <title>KICKS — versões do projeto</title>
+    <link rel="stylesheet" href="assets/selector.css">
+</head>
+<body>
+    <header class="project-header">
+        <div class="container">
+            <p class="eyebrow">PROJETO EDUCACIONAL FRONT-END</p>
+            <h1>KICKS — cinco implementações da mesma loja</h1>
+            <p>Abra cada versão para comparar a construção do mesmo e-commerce com técnicas diferentes de layout.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="version-section" aria-labelledby="versions-title">
+            <header class="section-header">
+                <h2 id="versions-title">Versões disponíveis</h2>
+                <p>Dados, imagens e JavaScript de negócio são compartilhados. A camada de apresentação muda em cada pasta.</p>
+            </header>
+
+            <div class="version-grid">
+                <article class="version-card">
+                    <p class="version-number">01</p>
+                    <h3>CSS Clássico</h3>
+                    <p>Layout sem Flexbox e sem CSS Grid, usando float, inline-block, table e clearfix.</p>
+                    <a href="01-css-classico/index.html">Abrir versão CSS Clássico</a>
+                </article>
+
+                <article class="version-card">
+                    <p class="version-number">02</p>
+                    <h3>CSS Grid</h3>
+                    <p>Layout estruturado com CSS Grid para áreas, colunas e listas responsivas.</p>
+                    <a href="02-css-grid/index.html">Abrir versão CSS Grid</a>
+                </article>
+
+                <article class="version-card">
+                    <p class="version-number">03</p>
+                    <h3>CSS Flexbox</h3>
+                    <p>Layout baseado em Flexbox, flex-wrap, flex-basis e distribuição de espaço.</p>
+                    <a href="03-css-flex/index.html">Abrir versão Flexbox</a>
+                </article>
+
+                <article class="version-card">
+                    <p class="version-number">04</p>
+                    <h3>Bootstrap</h3>
+                    <p>Layout com os componentes do Bootstrap 5 (navbar, card, grid, accordion). Tema roxo. O style.css só customiza.</p>
+                    <a href="04-bootstrap/index.html">Abrir versão Bootstrap</a>
+                </article>
+
+                <article class="version-card">
+                    <p class="version-number">05</p>
+                    <h3>Tailwind CSS</h3>
+                    <p>Layout 100% em utilitários do Tailwind na marcação. Tema verde. O style.css só customiza.</p>
+                    <a href="05-tailwind/index.html">Abrir versão Tailwind</a>
+                </article>
+            </div>
+        </section>
+
+        <aside class="shared-info" aria-labelledby="shared-title">
+            <h2 id="shared-title">Recursos compartilhados</h2>
+            <p>O catálogo fica em <code>shared/data/produtos.js</code>, as imagens em <code>shared/images</code> e a lógica em <code>shared/js/app.js</code>.</p>
+        </aside>
+    </main>
+
+    <footer class="project-footer">
+        <div class="container">
+            <p>KICKS · Projeto demonstrativo educacional · 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
