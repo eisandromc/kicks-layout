@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KICKS — versão Bootstrap. Loja demonstrativa de tênis construída com os componentes do Bootstrap 5.">
+    <title>Bootstrap - Home | KICKS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white" data-layout="bootstrap" data-page="index">
+
+    <a class="back-to-index" href="../index.html" aria-label="Voltar para a página de versões" title="Voltar para as versões">
+        <span class="back-to-index-icon" aria-hidden="true">&#8592;</span>
+        <span class="back-to-index-label">Versões</span>
+    </a>
+    <div class="text-bg-dark text-center small py-2">Frete grátis para todo o Brasil em compras acima de R$ 299.</div>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top py-3" aria-label="navegação principal">
+        <div class="container">
+            <a class="navbar-brand fw-black d-flex align-items-center gap-2 fs-4" href="index.html">
+                <span aria-hidden="true">&#9698;</span>KICKS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrinho.html">Carrinho</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conta.html">Conta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+                <form class="input-group flex-grow-1 my-3 my-lg-0 mx-lg-4" role="search" data-global-search aria-label="buscar produtos">
+                    <label class="visually-hidden" for="global-search">Buscar produtos</label>
+                    <input id="global-search" type="search" class="form-control" placeholder="Buscar tênis, marca ou modelo...">
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+                <a class="btn btn-outline-dark position-relative flex-shrink-0" href="carrinho.html">
+                    Carrinho
+                    <span class="badge text-bg-primary rounded-pill ms-1" data-cart-count>0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="conteudo-principal">
+        <section class="py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="row g-4 g-lg-5 align-items-center">
+                    <div class="col-lg-6 hero-copy">
+                        <p class="eyebrow mb-3">MAIS QUE TÊNIS, É ATITUDE</p>
+                        <h1 class="mb-3">Caminhe com o seu estilo.</h1>
+                        <p class="lead text-secondary mb-4">Design, conforto e personalidade em modelos para cidade, corrida, quadra e lifestyle.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <a class="btn btn-primary btn-lg" href="produtos.html">Ver lançamentos</a>
+                            <a class="btn btn-outline-secondary btn-lg" href="#mais-vendidos">Mais vendidos</a>
+                        </div>
+                        <div class="row row-cols-3 g-3 text-center text-lg-start">
+                            <div class="col"><div class="fw-bold fs-5">+10 mil</div><div class="text-secondary small">clientes</div></div>
+                            <div class="col"><div class="fw-bold fs-5">+50</div><div class="text-secondary small">modelos</div></div>
+                            <div class="col"><div class="fw-bold fs-5">Brasil</div><div class="text-secondary small">entrega</div></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img class="img-fluid" src="../shared/images/hero-product.png" alt="Produto em destaque da loja KICKS">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" aria-labelledby="categories-title">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div>
+                        <p class="eyebrow mb-1">ESCOLHA SEU RITMO</p>
+                        <h2 id="categories-title" class="h3 fw-bold m-0">Compre por categoria</h2>
+                    </div>
+                    <a class="link-brand" href="produtos.html">Ver todas</a>
+                </div>
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                    <div class="col">
+                        <a class="card h-100 border-0 bg-body-tertiary p-3 text-body text-decoration-none" href="produtos.html?categoria=Casual">
+                            <span class="fw-bold">Casual</span>
+                            <span class="text-secondary small">Para todos os dias</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="card h-100 border-0 bg-body-tertiary p-3 text-body text-decoration-none" href="produtos.html?categoria=Running">
+                            <span class="fw-bold">Running</span>
+                            <span class="text-secondary small">Leveza e resposta</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="card h-100 border-0 bg-body-tertiary p-3 text-body text-decoration-none" href="produtos.html?categoria=Basquete">
+                            <span class="fw-bold">Basquete</span>
+                            <span class="text-secondary small">Estabilidade</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="card h-100 border-0 bg-body-tertiary p-3 text-body text-decoration-none" href="produtos.html?categoria=Skate">
+                            <span class="fw-bold">Skate</span>
+                            <span class="text-secondary small">Resistência</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="card h-100 border-0 bg-body-tertiary p-3 text-body text-decoration-none" href="produtos.html?categoria=Lifestyle">
+                            <span class="fw-bold">Lifestyle</span>
+                            <span class="text-secondary small">Expressão urbana</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-body-tertiary" id="mais-vendidos" aria-labelledby="featured-title">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div>
+                        <p class="eyebrow mb-1">SELEÇÃO KICKS</p>
+                        <h2 id="featured-title" class="h3 fw-bold m-0">Mais vendidos</h2>
+                    </div>
+                    <a class="link-brand" href="produtos.html">Explorar catálogo</a>
+                </div>
+                <div class="product-grid" data-product-list="featured" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="py-5" aria-labelledby="promo-title">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card text-bg-dark border-0 h-100 p-4 p-lg-5">
+                            <p class="small fw-bold text-uppercase opacity-75 mb-2">ATÉ 40% OFF</p>
+                            <h2 id="promo-title" class="fw-bold">Ofertas imperdíveis.</h2>
+                            <p class="opacity-75">Seleção com preços especiais por tempo limitado.</p>
+                            <a class="btn btn-light align-self-start mt-2" href="produtos.html">Aproveitar agora</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card bg-white border h-100 p-4 p-lg-5">
+                            <p class="small fw-bold text-uppercase text-secondary mb-2">LANÇAMENTOS</p>
+                            <h2 class="fw-bold">Novos caminhos, mesmo espírito.</h2>
+                            <p class="text-secondary">Descubra novas silhuetas e materiais.</p>
+                            <a class="btn btn-outline-dark align-self-start mt-2" href="produtos.html">Ver lançamentos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 border-top" aria-labelledby="benefits-title">
+            <div class="container">
+                <h2 id="benefits-title" class="visually-hidden">Benefícios da loja</h2>
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 text-center">
+                    <div class="col">
+                        <span class="benefit-icon mb-2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v9H3z"/><path d="M14 9h4l3 3v3h-7z"/><circle cx="7.5" cy="17.5" r="1.7"/><circle cx="17.5" cy="17.5" r="1.7"/></svg></span>
+                        <div class="fw-bold">Frete grátis</div>
+                        <div class="text-secondary small">acima de R$ 299</div>
+                    </div>
+                    <div class="col">
+                        <span class="benefit-icon mb-2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10.5h18"/><path d="M7 15h5"/></svg></span>
+                        <div class="fw-bold">12x sem juros</div>
+                        <div class="text-secondary small">no cartão</div>
+                    </div>
+                    <div class="col">
+                        <span class="benefit-icon mb-2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+                        <div class="fw-bold">Compra segura</div>
+                        <div class="text-secondary small">checkout demonstrativo</div>
+                    </div>
+                    <div class="col">
+                        <span class="benefit-icon mb-2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a8 8 0 0 1 13.5-3.7L20 8"/><path d="M20 4v4h-4"/><path d="M20 15a8 8 0 0 1-13.5 3.7L4 16"/><path d="M4 20v-4h4"/></svg></span>
+                        <div class="fw-bold">Troca fácil</div>
+                        <div class="text-secondary small">em até 30 dias</div>
+                    </div>
+                    <div class="col">
+                        <span class="benefit-icon mb-2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4.5" height="6.5" rx="1.5"/><rect x="16.5" y="13" width="4.5" height="6.5" rx="1.5"/><path d="M20 19.5a4 4 0 0 1-4 3.2h-2"/></svg></span>
+                        <div class="fw-bold">Atendimento</div>
+                        <div class="text-secondary small">via WhatsApp</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="py-5 bg-body-tertiary" aria-labelledby="newsletter-title">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h2 id="newsletter-title" class="h3 fw-bold">Fique por dentro</h2>
+                    <p class="text-secondary mb-0">Receba novidades, promoções e lançamentos em primeira mão.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="input-group input-group-lg" data-newsletter>
+                        <label class="visually-hidden" for="newsletter-email">Seu e-mail</label>
+                        <input id="newsletter-email" type="email" required class="form-control" placeholder="Seu e-mail">
+                        <button class="btn btn-primary" type="submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-bg-dark py-5">
+        <div class="container">
+            <div class="row g-4">
+                <section class="col-lg-4">
+                    <h2 class="h6 text-white text-uppercase">KICKS</h2>
+                    <p class="small text-white-50 mb-0">Tênis para todos os passos da sua jornada. Projeto demonstrativo front-end, com ênfase didática na construção de layout com Bootstrap.</p>
+                </section>
+                <nav class="col-6 col-lg-2" aria-label="links institucionais">
+                    <h2 class="h6 text-white text-uppercase">Institucional</h2>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="sobre.html">Sobre nós</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="contato.html">Contato</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+                <nav class="col-6 col-lg-3" aria-label="links de ajuda">
+                    <h2 class="h6 text-white text-uppercase">Ajuda</h2>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="carrinho.html">Meu carrinho</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="favoritos.html">Favoritos</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="checkout.html">Finalizar compra</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="politicas.html">Políticas</a></li>
+                    </ul>
+                </nav>
+                <nav class="col-12 col-lg-3" aria-label="categorias em destaque">
+                    <h2 class="h6 text-white text-uppercase">Categorias</h2>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="produtos.html?categoria=Running">Running</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="produtos.html?categoria=Casual">Casual</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="produtos.html?categoria=Skate">Skate</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="produtos.html?categoria=Lifestyle">Lifestyle</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <hr class="border-light-subtle my-4 opacity-25">
+            <p class="small text-white-50 mb-0">© 2026 KICKS · Demonstração educacional · Layout Bootstrap.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../shared/js/store-config.js"></script>
+    <script src="../shared/data/produtos.js"></script>
+    <script src="../shared/js/app.js"></script>
+</body>
+</html>

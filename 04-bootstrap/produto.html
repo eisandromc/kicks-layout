@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KICKS — versão Bootstrap. Loja demonstrativa de tênis construída com os componentes do Bootstrap 5.">
+    <title>Bootstrap - Produto | KICKS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white" data-layout="bootstrap" data-page="produto">
+
+    <a class="back-to-index" href="../index.html" aria-label="Voltar para a página de versões" title="Voltar para as versões">
+        <span class="back-to-index-icon" aria-hidden="true">&#8592;</span>
+        <span class="back-to-index-label">Versões</span>
+    </a>
+    <div class="text-bg-dark text-center small py-2">Frete grátis para todo o Brasil em compras acima de R$ 299.</div>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top py-3" aria-label="navegação principal">
+        <div class="container">
+            <a class="navbar-brand fw-black d-flex align-items-center gap-2 fs-4" href="index.html">
+                <span aria-hidden="true">&#9698;</span>KICKS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrinho.html">Carrinho</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conta.html">Conta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+                <form class="input-group flex-grow-1 my-3 my-lg-0 mx-lg-4" role="search" data-global-search aria-label="buscar produtos">
+                    <label class="visually-hidden" for="global-search">Buscar produtos</label>
+                    <input id="global-search" type="search" class="form-control" placeholder="Buscar tênis, marca ou modelo...">
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+                <a class="btn btn-outline-dark position-relative flex-shrink-0" href="carrinho.html">
+                    Carrinho
+                    <span class="badge text-bg-primary rounded-pill ms-1" data-cart-count>0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="conteudo-principal">
+        <section class="py-5 bg-body-tertiary">
+            <div class="container">
+                <p class="eyebrow mb-2">KICKS STORE</p>
+                <h1 class="display-5 fw-bold">Detalhes do produto</h1>
+                <p class="text-secondary mb-0">Visualize foto, descrição, tamanhos e opções de compra.</p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <article class="product-detail" data-product-detail></article>
+            </div>
+        </section>
+    </main>
+
+    <section class="py-5 bg-body-tertiary" aria-labelledby="newsletter-title">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h2 id="newsletter-title" class="h3 fw-bold">Fique por dentro</h2>
+                    <p class="text-secondary mb-0">Receba novidades, promoções e lançamentos em primeira mão.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="input-group input-group-lg" data-newsletter>
+                        <label class="visually-hidden" for="newsletter-email">Seu e-mail</label>
+                        <input id="newsletter-email" type="email" required class="form-control" placeholder="Seu e-mail">
+                        <button class="btn btn-primary" type="submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-bg-dark py-5">
+        <div class="container">
+            <div class="row g-4">
+                <section class="col-lg-4">
+                    <h2 class="h6 text-white text-uppercase">KICKS</h2>
+                    <p class="small text-white-50 mb-0">Tênis para todos os passos da sua jornada. Projeto demonstrativo front-end, com ênfase didática na construção de layout com Bootstrap.</p>
+                </section>
+                <nav class="col-6 col-lg-2" aria-label="links institucionais">
+                    <h2 class="h6 text-white text-uppercase">Institucional</h2>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="sobre.html">Sobre nós</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="contato.html">Contato</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+                <nav class="col-6 col-lg-3" aria-label="links de ajuda">
+                    <h2 class="h6 text-white text-uppercase">Ajuda</h2>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="carrinho.html">Meu carrinho</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="favoritos.html">Favoritos</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="checkout.html">Finalizar compra</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="politicas.html">Políticas</a></li>
+                    </ul>
+                </nav>
+                <nav class="col-12 col-lg-3" aria-label="categorias em destaque">
+                    <h2 class="h6 text-white text-uppercase">Categorias</h2>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="produtos.html?categoria=Running">Running</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="produtos.html?categoria=Casual">Casual</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="produtos.html?categoria=Skate">Skate</a></li>
+                        <li class="mb-1"><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="produtos.html?categoria=Lifestyle">Lifestyle</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <hr class="border-light-subtle my-4 opacity-25">
+            <p class="small text-white-50 mb-0">© 2026 KICKS · Demonstração educacional · Layout Bootstrap.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../shared/js/store-config.js"></script>
+    <script src="../shared/data/produtos.js"></script>
+    <script src="../shared/js/app.js"></script>
+</body>
+</html>
